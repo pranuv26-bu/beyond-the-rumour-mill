@@ -1,0 +1,236 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#f5f1ff">
+  <title>Beyond the Rumour Mill | Placement Hub</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700;800&family=Plus+Jakarta+Sans:wght@500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="app-shell">
+
+  <aside class="sidebar" id="sidebar">
+    <a class="brand" href="#" data-page="dashboard">
+      <div class="brand-mark">B</div>
+      <div><strong>Beyond</strong><small>THE RUMOUR MILL</small></div>
+    </a>
+
+    <div class="side-caption">WORKSPACE</div>
+    <nav class="navigation">
+      <button class="nav-link active" data-page="dashboard"><span class="nav-icon">⌂</span>Dashboard</button>
+      <button class="nav-link" data-page="companies"><span class="nav-icon">▦</span>Companies</button>
+      <button class="nav-link" data-page="experiences"><span class="nav-icon">▤</span>Interview Experiences</button>
+      <button class="nav-link" data-page="preparation"><span class="nav-icon">✓</span>Preparation Tracker</button>
+      <button class="nav-link" data-page="community"><span class="nav-icon">♧</span>Senior Guidance</button>
+      <button class="nav-link" data-page="updates"><span class="nav-icon">◷</span>Placement Updates</button>
+    </nav>
+
+    <div class="sidebar-spacer"></div>
+    <div class="sidebar-tip">
+      <div class="tip-icon">✦</div>
+      <strong>Knowledge for everyone.</strong>
+      <p>Make informed decisions with transparent placement information.</p>
+      <button data-page="community">Explore community →</button>
+    </div>
+    <div class="sidebar-user">
+      <div class="avatar">ST</div>
+      <div class="user-copy"><strong>Student Workspace</strong><small>Placement candidate</small></div>
+      <span class="muted">•••</span>
+    </div>
+  </aside>
+
+  <main class="main-area">
+    <header class="topbar">
+      <div class="topbar-left">
+        <button class="mobile-menu icon-button" id="menuToggle" aria-label="Open navigation">☰</button>
+        <div class="breadcrumb">Workspace <span>/</span> <strong id="breadcrumb">Dashboard</strong></div>
+      </div>
+      <div class="topbar-actions">
+        <label class="global-search">
+          <span>⌕</span>
+          <input id="globalSearch" type="search" placeholder="Search companies, topics...">
+          <kbd>⌘ K</kbd>
+        </label>
+        <button class="icon-button theme-toggle" id="themeToggle" aria-label="Toggle theme" title="Toggle light and dark mode"><span id="themeIcon">☾</span></button>
+        <div class="notification-wrap">
+          <button class="icon-button notification-button" id="notificationToggle" aria-label="Notifications">♧<i></i></button>
+          <div class="notification-menu" id="notificationMenu">
+            <div class="notification-heading"><strong>Notifications</strong><button id="markRead">Mark all read</button></div>
+            <div class="notification-item"><span class="notification-dot"></span><div><strong>Welcome to your placement hub</strong><p>Explore company profiles and preparation resources.</p><small>Just now</small></div></div>
+            <div class="notification-item"><span class="notification-dot"></span><div><strong>Preparation checklist</strong><p>Start tracking your placement preparation progress.</p><small>Today</small></div></div>
+            <div class="notification-item"><span class="notification-dot"></span><div><strong>Community is open</strong><p>Submit questions and share useful guidance.</p><small>Today</small></div></div>
+          </div>
+        </div>
+        <div class="top-avatar">ST</div>
+      </div>
+    </header>
+
+    <!-- DASHBOARD -->
+    <section class="page active" id="dashboard">
+      <div class="welcome-row">
+        <div>
+          <div class="eyebrow">YOUR PLACEMENT JOURNEY</div>
+          <h1>Welcome back! <span class="wave">👋</span></h1>
+          <p class="subheading">Your placement preparation, experiences and guidance — all in one place.</p>
+        </div>
+        <button class="button primary" data-page="companies">Explore companies <span>→</span></button>
+      </div>
+
+      <div class="dashboard-layout">
+        <div class="dashboard-main">
+          <div class="section-title-row">
+            <div><h2>Explore your preparation</h2><p>Pick up where you left off.</p></div>
+            <button class="text-button" data-page="preparation">View tracker →</button>
+          </div>
+
+          <div class="feature-grid">
+            <article class="feature-card feature-purple" data-page="companies">
+              <div class="feature-art art-company"><span>▦</span><i>✦</i></div>
+              <div class="feature-content"><span class="mini-label">DISCOVER</span><h3>Company Directory</h3><p>Explore employers, roles and hiring information.</p><div class="feature-bottom"><span>Browse companies</span><b>→</b></div></div>
+            </article>
+            <article class="feature-card feature-blue" data-page="experiences">
+              <div class="feature-art art-experience"><span>▤</span><i>✧</i></div>
+              <div class="feature-content"><span class="mini-label">LEARN</span><h3>Interview Experiences</h3><p>Understand interview rounds through shared experiences.</p><div class="feature-bottom"><span>Read experiences</span><b>→</b></div></div>
+            </article>
+            <article class="feature-card feature-orange" data-page="preparation">
+              <div class="feature-art art-prep"><span>✓</span><i>✦</i></div>
+              <div class="feature-content"><span class="mini-label">IMPROVE</span><h3>Preparation Tracker</h3><p>Organise your learning and monitor progress.</p><div class="feature-bottom"><span>Continue learning</span><b>→</b></div></div>
+            </article>
+          </div>
+
+          <div class="analytics-grid">
+            <article class="panel analytics-panel">
+              <div class="panel-heading"><div><h3>Preparation analytics</h3><p>Your checklist completion by category</p></div><span class="pill">Live progress</span></div>
+              <div class="chart-area">
+                <div class="chart-y-labels"><span>100%</span><span>75%</span><span>50%</span><span>25%</span><span>0%</span></div>
+                <div class="bar-chart" id="categoryChart">
+                  <div class="chart-grid-lines"><i></i><i></i><i></i><i></i><i></i></div>
+                  <div class="bar-column"><div class="bar" id="bar-dsa" style="height:0%"></div><small>DSA</small></div>
+                  <div class="bar-column"><div class="bar bar-alt" id="bar-core" style="height:0%"></div><small>Core CS</small></div>
+                  <div class="bar-column"><div class="bar bar-third" id="bar-dev" style="height:0%"></div><small>Projects</small></div>
+                  <div class="bar-column"><div class="bar bar-fourth" id="bar-interview" style="height:0%"></div><small>Interview</small></div>
+                </div>
+              </div>
+            </article>
+
+            <article class="panel readiness-panel">
+              <div class="panel-heading"><div><h3>Your readiness</h3><p>Based on your checklist</p></div></div>
+              <div class="donut-wrap"><div class="donut" id="readinessDonut"><div><strong id="readinessValue">0%</strong><small>completed</small></div></div></div>
+              <div class="readiness-legend"><span><i class="legend-purple"></i>Completed</span><span><i class="legend-grey"></i>Remaining</span></div>
+              <button class="button secondary full-width" data-page="preparation">Update progress</button>
+            </article>
+          </div>
+
+          <section class="panel assignment-panel">
+            <div class="panel-heading"><div><h3>Your next steps</h3><p>Suggested actions to keep moving forward</p></div><button class="text-button" data-page="preparation">Open tracker →</button></div>
+            <div class="next-step-list" id="nextSteps"></div>
+          </section>
+        </div>
+
+        <aside class="dashboard-side">
+          <article class="panel side-progress">
+            <div class="panel-heading"><div><h3>Weekly focus</h3><p>Your preparation snapshot</p></div><span class="sparkle">✦</span></div>
+            <div class="weekly-number"><strong id="weeklyPercent">0%</strong><span>checklist complete</span></div>
+            <div class="progress-track"><div class="progress-fill" id="weeklyBar"></div></div>
+            <p class="small-note">Complete checklist items to build consistent preparation habits.</p>
+            <button class="button secondary full-width" data-page="preparation">View checklist</button>
+          </article>
+
+          <article class="panel quick-stats">
+            <div class="panel-heading"><div><h3>At a glance</h3><p>Your placement hub</p></div></div>
+            <div class="quick-stat"><span class="quick-stat-icon lavender">▦</span><div><strong id="statCompanies">06</strong><small>Companies</small></div></div>
+            <div class="quick-stat"><span class="quick-stat-icon peach">▤</span><div><strong id="statExperiences">08</strong><small>Experiences</small></div></div>
+            <div class="quick-stat"><span class="quick-stat-icon mint">◷</span><div><strong id="statUpdates">04</strong><small>Sample updates</small></div></div>
+          </article>
+
+          <article class="panel achievements-panel">
+            <div class="panel-heading"><div><h3>Milestones</h3><p>Small steps add up</p></div><span class="pill" id="milestoneCount">0 / 4</span></div>
+            <div class="achievement-list">
+              <div class="achievement"><span class="medal gold">★</span><div><strong>First step</strong><small>Complete your first task</small></div><span id="milestone1">○</span></div>
+              <div class="achievement"><span class="medal silver">◆</span><div><strong>Getting started</strong><small>Complete 25% of tasks</small></div><span id="milestone2">○</span></div>
+              <div class="achievement"><span class="medal bronze">✦</span><div><strong>Halfway there</strong><small>Complete 50% of tasks</small></div><span id="milestone3">○</span></div>
+              <div class="achievement"><span class="medal violet">♛</span><div><strong>Preparation pro</strong><small>Complete all tasks</small></div><span id="milestone4">○</span></div>
+            </div>
+          </article>
+        </aside>
+      </div>
+    </section>
+
+    <!-- COMPANIES -->
+    <section class="page" id="companies">
+      <div class="page-heading"><div class="eyebrow">DISCOVER OPPORTUNITIES</div><h1>Company Directory</h1><p class="subheading">Explore employers, understand roles and discover preparation resources.</p></div>
+      <div class="filter-toolbar panel">
+        <label class="input-search">⌕ <input id="companySearch" placeholder="Search company or industry..."></label>
+        <select id="industryFilter"><option value="all">All industries</option><option>Technology</option><option>Consulting</option><option>Finance</option></select>
+        <select id="roleCompanyFilter"><option value="all">All roles</option><option>Software Engineer</option><option>Analyst</option><option>Intern</option></select>
+      </div>
+      <div class="company-grid" id="companyGrid"></div>
+    </section>
+
+    <!-- EXPERIENCES -->
+    <section class="page" id="experiences">
+      <div class="page-heading"><div class="eyebrow">LEARN FROM OTHERS</div><h1>Interview Experiences</h1><p class="subheading">Explore interview journeys, rounds and preparation insights.</p></div>
+      <div class="filter-toolbar panel">
+        <label class="input-search">⌕ <input id="experienceSearch" placeholder="Search company or role..."></label>
+        <select id="roleFilter"><option value="all">All roles</option><option>Software Engineer</option><option>Analyst</option><option>Intern</option></select>
+        <select id="statusFilter"><option value="all">All outcomes</option><option>Selected</option><option>Not Selected</option></select>
+      </div>
+      <div class="transparency-note"><strong>ⓘ Source transparency</strong><p>Demonstration records are labelled as sample content. Real submissions should identify their source and verification status.</p></div>
+      <div class="experience-list" id="experienceList"></div>
+    </section>
+
+    <!-- PREPARATION -->
+    <section class="page" id="preparation">
+      <div class="page-heading"><div class="eyebrow">PLAN. PREPARE. IMPROVE.</div><h1>Preparation Tracker</h1><p class="subheading">Track your progress across technical skills, projects and interviews.</p></div>
+      <div class="panel tracker-overview"><div><span class="eyebrow">OVERALL COMPLETION</span><h2 id="trackerPercentage">0%</h2><p id="trackerDescription">Start checking off tasks as you complete them.</p></div><div class="tracker-overview-progress"><div class="progress-track"><div class="progress-fill" id="trackerBar"></div></div><small id="taskCount">0 of 0 tasks completed</small></div></div>
+      <div class="tracker-grid">
+        <article class="panel tracker-card"><div class="tracker-card-icon lavender">⌘</div><h3>Data Structures & Algorithms</h3><p>Strengthen problem-solving fundamentals.</p><div id="dsaTasks"></div></article>
+        <article class="panel tracker-card"><div class="tracker-card-icon blue-tint">▤</div><h3>Core Computer Science</h3><p>Build a strong foundation in CS subjects.</p><div id="coreTasks"></div></article>
+        <article class="panel tracker-card"><div class="tracker-card-icon mint">⌘</div><h3>Development & Projects</h3><p>Demonstrate practical engineering skills.</p><div id="developmentTasks"></div></article>
+        <article class="panel tracker-card"><div class="tracker-card-icon peach">✧</div><h3>Interview Readiness</h3><p>Prepare to communicate your skills clearly.</p><div id="interviewTasks"></div></article>
+      </div>
+      <button class="button danger-outline" id="resetChecklist">Reset checklist</button>
+    </section>
+
+    <!-- COMMUNITY -->
+    <section class="page" id="community">
+      <div class="page-heading"><div class="eyebrow">LEARN TOGETHER</div><h1>Senior Guidance</h1><p class="subheading">Knowledge should not depend on personal connections.</p></div>
+      <div class="community-banner"><div><span class="eyebrow">A BETTER WAY TO PREPARE</span><h2>Share what you know.<br>Help someone move forward.</h2><p>Ask questions, exchange practical guidance and learn together.</p></div><div class="community-illustration">♧</div></div>
+      <div class="community-grid">
+        <article class="panel form-panel"><h3>Ask the community</h3><p>Submit a placement or preparation question.</p><form id="questionForm"><input id="questionTitle" required maxlength="100" placeholder="Question title"><textarea id="questionBody" required maxlength="600" placeholder="Explain what you need help with..."></textarea><button class="button primary" type="submit">Submit question →</button></form></article>
+        <article class="panel"><div class="panel-heading"><div><h3>Community questions</h3><p>Questions submitted in this browser</p></div></div><div id="questionList"></div></article>
+      </div>
+      <article class="panel guidance-panel"><div class="panel-heading"><div><h3>Preparation insights</h3><p>Illustrative guidance cards for the prototype</p></div></div><div class="guidance-grid">
+        <div class="guidance-card"><div class="avatar purple-avatar">DS</div><h4>DSA preparation</h4><p>Practise problem-solving patterns and explain your approach clearly.</p><span class="source-tag">Illustrative guidance</span></div>
+        <div class="guidance-card"><div class="avatar blue-avatar">TI</div><h4>Technical interviews</h4><p>Understand your projects deeply and be ready to discuss design choices.</p><span class="source-tag">Illustrative guidance</span></div>
+        <div class="guidance-card"><div class="avatar green-avatar">CV</div><h4>Resume preparation</h4><p>Highlight measurable outcomes and your own technical contributions.</p><span class="source-tag">Illustrative guidance</span></div>
+      </div></article>
+    </section>
+
+    <!-- UPDATES -->
+    <section class="page" id="updates">
+      <div class="page-heading"><div class="eyebrow">STAY INFORMED</div><h1>Placement Updates</h1><p class="subheading">A central place for important placement information.</p></div>
+      <div class="transparency-note"><strong>Important</strong><p>These are sample announcements. Official information must be confirmed through the institution's placement cell or the employer.</p></div>
+      <div class="updates-list" id="updatesList"></div>
+    </section>
+
+    <footer class="site-footer"><span>Beyond the Rumour Mill © 2026</span><span>Trustworthy information. Equal opportunities. Better preparation.</span></footer>
+  </main>
+</div>
+
+<div class="toast" id="toast" role="status"></div>
+<div class="modal-backdrop" id="modalBackdrop">
+  <div class="modal panel" role="dialog" aria-modal="true" aria-labelledby="modalTitle">
+    <button class="modal-close" id="modalClose" aria-label="Close">×</button>
+    <div id="modalContent"></div>
+  </div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
